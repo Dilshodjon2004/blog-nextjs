@@ -1,8 +1,9 @@
-import { getFeaturedPosts } from "@/services";
 import { useState, useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import FeaturedPostCard from "@/components/FeaturedPostCard";
+import FeaturedPostCard from "../components/FeaturedPostCard";
+import { getFeaturedPosts } from "../services";
+
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 1024 },
@@ -78,8 +79,8 @@ const FeaturedPosts = () => {
         autoPlay={true}
         autoPlaySpeed={3000}
         infinite
-        customRightArrow={customRightArrow}
-        customLeftArrow={customLeftArrow}
+        // customRightArrow={customRightArrow}
+        // customLeftArrow={customLeftArrow}
         responsive={responsive}
         itemClass="px-4"
       >

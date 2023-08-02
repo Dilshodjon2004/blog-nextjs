@@ -3,7 +3,6 @@ import moment from "moment";
 import Link from "next/link";
 
 const PostCard = ({ post }) => {
-  console.log(post);
   return (
     <div className="bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
       <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-indigo-700 text-3xl font-semibold">
